@@ -25,7 +25,7 @@ class OfficeConverter
      * @param string      $bin
      * @param bool        $prefixExecWithExportHome
      */
-    public function __construct($filename, $tempPath = null, $bin = 'libreoffice', $prefixExecWithExportHome = true)
+    public function __construct($filename, $tempPath = null, $bin = 'soffice', $prefixExecWithExportHome = true)
     {
         if ($this->open($filename)) {
             $this->setup($tempPath, $bin, $prefixExecWithExportHome);
